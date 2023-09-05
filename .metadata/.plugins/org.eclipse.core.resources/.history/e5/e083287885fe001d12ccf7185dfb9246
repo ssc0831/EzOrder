@@ -1,8 +1,0 @@
-package com.day09;
-
-public class ColorPointEx {
-	public static void main(String[] args) {
-	//Point p = new Point(3,4);
-	
-}
-}
