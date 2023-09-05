@@ -1,0 +1,22 @@
+package com.day09trans;
+
+public class Person extends Trans {
+
+	private String studentName;
+	private int money;
+
+	public Person(String name, int money) {
+		studentName=name;
+		this.money=money;
+		
+	}
+
+	public void take(, int unit) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void showInfo() {
+		// TODO Auto-generated method stub
+		
+	}}

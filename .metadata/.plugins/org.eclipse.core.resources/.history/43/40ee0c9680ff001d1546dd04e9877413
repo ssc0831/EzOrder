@@ -1,0 +1,13 @@
+package com.day10;
+
+// com.day10.Member.java 파일을 읽어서 output.txt로 내보내시오.
+// 1 : package com.day10; ...
+// BufferedReader, PrintStream 사용하기
+public class LineFile {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

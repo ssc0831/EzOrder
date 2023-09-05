@@ -1,0 +1,13 @@
+package com.day09.collection;
+
+public class Member {
+
+	public Member(int memberId, String memberNames) {
+		
+	}
+
+	public Object getMemberId() {
+		return null;
+	}
+
+}

@@ -1,0 +1,98 @@
+package com.exam02;
+
+public class CapitalTest {
+	private HashMap<String, String> hm = new HashMap<>();
+	private File dir, file;
+	public MyCapital() {
+		dir = new File("src\\com\\day11");
+		file = new File(dir, "capital.txt");
+	}
+				try {
+					if(!file.exists()) { 
+						file.createNewFile() ; 
+						return; 
+					}
+					
+					Scanner sc = new Scanner(file); 
+					
+					while(sc.hasNext()) {
+						String key = sc.next(); 
+						String value = sc.next() ;
+						hm.put(key, value);
+					}
+					System.out.println(hm);
+					sc.close();
+					
+			} catch (IOException e) {
+					e.printStackTrace();
+			} 
+			
+			public void quiz() {
+				Set<String> set = hm.keySet(); //키값 구함
+				 Object[] arr =set.toArray(); // 배열에 담기 ==>순서
+				 while(true) {
+					 int r = (int)(Math.random()*hm.size());
+					 String country = (String)arr[r];// 문제
+					 String result = hm.get(country) ;//정답
+			
+		}
+		
+		public void input() {
+			while(true) {
+				System.out.println("현재 : "+ hm.size());
+				System.out.println("나라 와 수도 입력(종료 x)>>>");
+				String nara = CapitalApp.sc.next(); 
+				if(nara.equalsIgnoreCase("x")) break;
+				if(hm.containsKey(nara)) { 
+					System.out.println("이미  입력한 나라입니다.");
+					continue;
+				}
+				String sudo = CapitalApp.sc.next();
+				hm.put(nara, sudo);
+			}
+			
+			
+		}
+		
+				  System.out.println(country  +" 수도는 ? (종료 x) >>");
+				  String dap = CapitalApp.sc.next();
+				  if(dap.equalsIgnoreCase("x")) break;
+				  if(result.equals(dap)) {
+					  System.out.println("정답!!!");
+				  }else {
+					  System.out.println("틀렸습니다.");
+				  }
+				
+		public void save() {
+			try {
+				FileWriter fw = new FileWriter(file);
+				Set<String> set = hm.keySet();
+				Iterator<String> it =  set.iterator();
+				while(it.hasNext()) {
+					String key = it.next();
+					String value =  hm.get(key) ;
+					fw.write(key +"  ");
+					fw.write(value+"\n");
+				}
+				fw.close();
+			} catch (IOException e) {
+					e.printStackTrace();
+			}
+			System.out.println("종료");
+			System.exit(0);
+		}
+	
+		public static void main(String[] args) {
+			MyCapital app = new MyCapital();
+			while(true) {
+				CapitalApp.showMenu();
+				int choice = CapitalApp.sc.nextInt();
+				switch(choice) {
+					case 1: app.input(); break;
+					case 2: app.quiz(); break;
+					case 3: app.save(); break;
+					default:System.out.println("입력오류");
+				}
+			}
+		}
+	}

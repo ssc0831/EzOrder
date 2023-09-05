@@ -1,0 +1,15 @@
+package com.day09.collection;
+
+public class MemberArrayList {
+
+	public void addMember(Member member) {
+		
+		
+	}
+
+	public void showAllMember() {
+		
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.day11;
+// p.551 직렬화(Serialize)
+
+class Person {
+	private String name;
+	private String job;
+
+	public Person(String name, String job) {
+		this.name = name;
+		this.job = job;
+	}
+
+	public Person() {
+		
+	}
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "name=" + name + ", job=" + job;
+	}
+}
+
+public class SerializeTest {
+
+	public static void main(String[] args) {
+		Person personAhn = new Person();
+		Person personKim = new Person("김철수", "상무이사");
+		System.out.println(personAhn);
+		System.out.println(personKim);
+	}
+
+}

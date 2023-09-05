@@ -1,0 +1,22 @@
+package com.day11;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class TokenFile {
+	// aa.txt 파일을 읽어서 :을 구분하여 숫자만 출력
+	// 숫자를 16진수로 변경 bb.txt로 내보내기
+	// Scanner, PrintStream, spilt() Method 사용
+	
+	public static void main(String[] args) {
+		Scanner sc = null;
+		try {
+			sc=new Scanner(new File("aa.txt"));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

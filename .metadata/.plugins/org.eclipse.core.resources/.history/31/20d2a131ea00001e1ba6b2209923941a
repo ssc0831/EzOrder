@@ -1,0 +1,39 @@
+package com.day12.swing;
+
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class JGugudan extends JFrame implements ActionListener {
+	private JTextField tf;
+	public JGugudan() {
+		super("구구단");
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setLayout(new FlowLayout());
+		tf = new JTextField(10);
+		
+		JButton btn = new JButton("실행");
+		JTextArea ta = new JTextArea(10, 15);
+		add(tf); add(btn); add(ta);
+		
+		setSize(300, 300);
+		setVisible(true);
+	}
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+
+	}
+
+	public static void main(String[] args) {
+		new JGugudan();
+
+	}
+
+}

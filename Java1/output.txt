@@ -1,0 +1,29 @@
+1 : package com.day10;
+2 : 
+3 : public class Member {
+4 : private int memberId;
+5 : private String memberName;
+6 : 
+7 : 	public Member(int memberId, String memberName) {
+8 : 		this.memberId=memberId;
+9 : 		this.memberName=memberName;
+10 : 	}
+11 : 	
+12 : 	@Override
+13 : 		public String toString() {
+14 : 			// TODO Auto-generated method stub
+15 : 			return memberName+" 회원님의 아이디는 " + memberId + "입니다.";
+16 : 		}
+17 : 	
+18 : 	//getter
+19 : 	public int getMemberId() {
+20 : 		return memberId;
+21 : 	}
+22 : 
+23 : 	public String getMemberName() {
+24 : 		return memberName;
+25 : 	}
+26 : 
+27 : 	
+28 : }
+29 : 

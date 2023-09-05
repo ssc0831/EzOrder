@@ -1,0 +1,61 @@
+package com.day12.swing;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class PannelTest extends JFrame implements ActionListener {
+
+	public PannelTest() {
+		// super("PannelTest"); // 제목 추가 setTitle로도 제목 추가 가능
+		setTitle("JFrame");
+		setLayout(new FlowLayout());
+		JButton btn1 = new JButton("버튼1");
+		JButton btn2 = new JButton("버튼2");
+		JButton btn3 = new JButton("버튼3");
+		add(btn1);
+		add(btn2);
+		add(btn3);
+		btn1.addActionListener(this);
+		btn2.addActionListener(this);
+		btn3.addActionListener(this);
+
+		setSize(300, 400);
+		setVisible(true); // false를 쓰면 보이지 않음
+	}
+
+	public static void main(String[] args) {
+		new PannelTest();
+	}
+
+	@Override // Event Handler - 어느 Component와 연결시킬것인가? 정해야함.
+	public void actionPerformed(ActionEvent e) {
+		String str = e.getActionCommand();
+//		System.out.println(str+" 이벤트 발생");
+		if(str.equals("버튼1")) {
+			getContentPane().setBackground(Color.red);
+//			System.out.println("이벤트1 발생");
+		}
+
+		 else if (str.equals("버튼2")) {
+			 getContentPane().setBackground(Color.pink);
+//			 System.out.println("이벤트2 발생");
+		 }
+
+
+		 else if (str.equals("버튼3")) {
+			 getContentPane().setBackground(Color.yellow);
+//			 System.out.println("이벤트3 발생");
+		 }
+
+	}
+}
+
+			 
+	
+		
+

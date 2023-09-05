@@ -1,0 +1,16 @@
+1 : package com.day10;
+2 : 
+3 : import java.util.Stack;
+4 : 
+5 : public class StackTest2 {
+6 : 
+7 : 	public static void main(String[] args) {
+8 : 		Stack<String> stack = new Stack<>();
+9 : 		stack.push("AA");
+10 : 		stack.push("BB");
+11 : 		stack.push("CC");
+12 : 		System.out.println(stack.pop());
+13 : 		System.out.println(stack.pop());
+14 : 	}
+15 : 
+16 : }

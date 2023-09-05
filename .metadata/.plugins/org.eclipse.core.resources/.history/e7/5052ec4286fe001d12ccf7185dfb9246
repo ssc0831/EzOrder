@@ -1,0 +1,11 @@
+package com.day09trans;
+
+public class Subway extends TakeTransMain{
+
+	private String lineNumber;
+
+	public Subway(String lineNumber) {
+		this.lineNumber=lineNumber;
+	}
+
+}

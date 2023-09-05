@@ -1,0 +1,32 @@
+package com.day09trans;
+
+import java.util.ArrayList;
+
+public class Person{
+
+	private String studentName;
+	private int money;
+	//private Trans[]arr = new Trans[10];
+	ArrayList<Trans>trans = new ArrayList<>();
+	//private int cnt;
+	public Person(String name, int money) {
+		studentName=name;
+		this.money=money;
+		
+	}
+
+	public void take(Trans trans, int unit) {
+		trans.take(unit);
+		this.money -= unit;
+		//arr[cnt++]=trans;
+	}
+
+	public void showInfo() {
+		System.out.println(studentName + " 님의 남은 돈은 " + money + "원 입니다.");
+	for(Trans t: trans) {
+		trans.add(t);
+		if(t==null) break;
+		System.out.println(t);
+	}
+	}
+}

@@ -1,0 +1,49 @@
+package com.day10;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
+
+// com.day10.Member.java 파일을 읽어서 output.txt로 내보내시오.
+// 1 : package com.day10; ...
+// BufferedReader, PrintStream 사용하기
+public class LineFile {
+
+	public static void main(String[] args) {
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader("output.txt"));
+		} catch (FileNotFoundException e) {
+				e.printStackTrace();
+		}
+		PrintStream ps = null;
+		String str = null;
+			try {
+				str = br.readLine();
+				while(true) {
+					if(str!=null) break;
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			fis = new FileInputStream("src\\com\\day10\\Member.java");
+			ps = new PrintStream("output.txt");
+			ps.print(str);
+			System.out.println(str);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+
+	
+
+	}
+}

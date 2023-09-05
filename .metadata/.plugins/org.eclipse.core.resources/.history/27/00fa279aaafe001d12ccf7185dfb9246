@@ -1,0 +1,21 @@
+package com.day09;
+
+import java.util.HashMap;
+import java.util.Random;
+
+public class HashMapTest01 {
+/*
+ * 1. HashMap hm 생성
+ * 2. Math.random 함수를 이용하여 1~20까지의 난수를 발생
+ * 3. 난수 10개를 hm에 추가 value값은 중복허용하지 않음.
+ */
+	
+	public static void main(String[] args) {
+	HashMap<Integer, Integer> hm = new HashMap<>();
+	int a = ((int)(Math.random()*20));
+	for(Integer i : n) {
+		System.out.println(a);
+	}
+	System.out.println();
+}
+}

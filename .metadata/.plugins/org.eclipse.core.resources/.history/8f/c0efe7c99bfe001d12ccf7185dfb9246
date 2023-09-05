@@ -1,0 +1,40 @@
+package com.day09;
+
+import java.util.HashMap;
+
+public class HashMapTest {
+
+	public static void main(String[] args) {
+		HashMap<String, String> hm = new HashMap<>();
+		hm.put("one", "첫번째"); // map 추가
+		hm.put("two", "두번째");
+		hm.put("three", "세번째");
+		hm.put("four", "네번째");
+		System.out.println(hm); // 순서 없음, 중복 허용 안 함(key에 대한 중복을 허용하지 않음.)
+		System.out.println("=======================================");
+		hm.put("one", "첫번째첫번째");
+		System.out.println(hm);
+		System.out.println("=======================================");
+		hm.put("oneone", "첫번째첫번째");
+		System.out.println(hm);
+		System.out.println("크기 : "+hm.size()); // map의 크기
+		System.out.println(hm.get("two")); // value값을 알려준다.
+		hm.remove("oneone");
+		System.out.println(hm); // map 제거, 지운 것을 알 수 있음.
+		String value = hm.remove("four");
+		System.out.println("제거 : "+value);
+		System.out.println(hm); // 제거 확인
+		System.out.println("=======================================");
+		HashMap<String, String> h = new HashMap<>();
+		h.put("1", "딸기");
+		h.put("2", "딸기2");
+		h.put("3", "딸기3");
+		h.put("4", "딸기4");
+		// h에 있는 value 값 출력
+		for(int i=0; i<h.size(); i++) {
+			System.out.println(h.values());
+		}
+		
+	}
+
+}

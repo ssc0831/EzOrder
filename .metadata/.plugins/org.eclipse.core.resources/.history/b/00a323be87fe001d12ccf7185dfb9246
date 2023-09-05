@@ -1,0 +1,14 @@
+package com.day09trans;
+
+public class Person extends TakeTransMain {
+
+	private String studentName;
+	private int money;
+
+	public Person(String name, int money) {
+		studentName=name;
+		this.money=money;
+		
+	}
+
+}
