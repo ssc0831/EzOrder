@@ -1,0 +1,12 @@
+package com.day10;
+
+public class ExceptionTest02 {
+
+	public static void main(String[] args) {
+		public static void main(String[] args) {
+			String[] message = {"one","two","three"};
+			
+
+	}
+
+}

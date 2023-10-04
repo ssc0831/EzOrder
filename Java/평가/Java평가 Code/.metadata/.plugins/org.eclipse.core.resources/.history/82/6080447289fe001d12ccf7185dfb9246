@@ -1,0 +1,11 @@
+package com.day09trans;
+
+public class Taxi extends Trans {
+
+	private int taxiNumber;
+
+	public Taxi(int taxiNumber) {
+	this.taxiNumber=taxiNumber;
+	}
+
+}

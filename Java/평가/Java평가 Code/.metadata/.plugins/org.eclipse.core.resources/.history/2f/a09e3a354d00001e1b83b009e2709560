@@ -1,0 +1,19 @@
+package com.day11;
+
+public class LamdaThreadTest {
+
+	public static void main(String[] args) {
+		// Runnable runnable = new Runnable(); - 추상적이기 때문에 오류
+		Runnable runnable = new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+	
+	}
+
+}

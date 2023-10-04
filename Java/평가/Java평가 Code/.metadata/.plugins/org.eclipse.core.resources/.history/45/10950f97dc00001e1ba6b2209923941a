@@ -1,0 +1,27 @@
+package com.day12.swing;
+
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class PannelTest extends JFrame{
+
+	public PannelTest() {
+	// super("PannelTest"); // 제목 추가 setTitle로도 제목 추가 가능
+	setTitle("JFrame");
+	setLayout(new FlowLayout());
+	JButton btn1 = new JButton("버튼1");
+	JButton btn2 = new JButton("버튼2");
+	JButton btn3 = new JButton("버튼3");
+	add(btn1);
+	add(btn2);
+	add(btn3);
+	setSize(300, 400);
+	setVisible(true); // false를 쓰면 보이지 않음
+}
+	public static void main(String[] args) {
+		new PannelTest();
+	}
+
+}

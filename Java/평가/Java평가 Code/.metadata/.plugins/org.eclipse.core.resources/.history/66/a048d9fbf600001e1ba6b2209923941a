@@ -1,0 +1,87 @@
+package com.exam01;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Student {
+	private String name;
+	private String major;
+	private String sID;
+	private double avg;
+	
+public Student(String name, String major, String sID, double avg) {
+	this.name=name;
+	this.major=major;
+	this.sID=sID;
+	this.avg=avg;
+}
+	static Scanner sc = new Scanner(System.in);
+	System.out.println("선택 하세요>>");
+	System.out.println("1. 데이터 입력");
+	System.out.println("2. 전체 입력");
+	System.out.println("3. 종료");
+	ArrayList<Student> std = new ArrayList<>();
+	int cnt;
+	
+	@Override
+	public String toString() {
+		return "이름 : " + name+"\n"
+	+"학과 : "+ major+"\n"
+	+"학번 : "+sID+"\n"
+	+"학점 평균 : "+avg;			
+	}
+	
+public void run() {
+	int num;
+	System.out.println("선택 >>");
+	num = sc.nextInt();
+	sc.nextLine();
+	switch (num) {
+	case 1:
+		inputData(sc);
+		break;
+	case 2:
+		viewData();
+		break;
+	case 3:
+		System.out.println("프로그램 종료");
+		break;
+	default:
+		System.out.println("잘못된 입력 입니다.");
+		break;
+	}
+}
+
+
+	private void inputData(Scanner sc2) {
+	// TODO Auto-generated method stub
+	
+}
+
+
+	public void viewData() {
+	// TODO Auto-generated method stub
+	
+}
+
+	
+
+
+	public void showMenu() {
+		System.out.println("선택하세요...");
+		System.out.println("1. 입력");
+		System.out.println("2. 전체보기");
+		System.out.println("3. 종료");
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	
+	
+	
+	
+
+	}
+
+}

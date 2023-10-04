@@ -1,0 +1,18 @@
+package com.day12.swing;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class PannelTest extends JFrame{
+
+	public PannelTest() {
+	JButton btn1 = new JButton("버튼1");
+	JButton btn2 = new JButton("버튼2");
+	JButton btn3 = new JButton("버튼3");
+	
+}
+	public static void main(String[] args) {
+		new PannelTest();
+	}
+
+}

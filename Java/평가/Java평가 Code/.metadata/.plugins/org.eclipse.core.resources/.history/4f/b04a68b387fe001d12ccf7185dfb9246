@@ -1,0 +1,11 @@
+package com.day09trans;
+
+public class SubWay extends TakeTransMain{
+
+	private String lineNumber;
+
+	public SubWay(String lineNumber) {
+		this.lineNumber=lineNumber;
+	}
+
+}

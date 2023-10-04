@@ -1,0 +1,26 @@
+package com.day10;
+
+import java.io.BufferedReader;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+
+public class BuffedReaderTest {
+
+	public static void main(String[] args) {
+		// 한줄 입력
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			String str;
+			try {
+				str = br.readLine();
+				
+				System.out.println(str);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		
+	}
+
+}

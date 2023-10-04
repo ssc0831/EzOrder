@@ -1,0 +1,24 @@
+package com.day09trans;
+
+public class Person{
+
+	private String studentName;
+	private int money;
+
+	public Person(String name, int money) {
+		studentName=name;
+		this.money=money;
+		
+	}
+
+	public void take(Trans trans, int unit) {
+		trans.take(unit);
+		this.money -= unit;
+		
+	}
+
+	public void showInfo() {
+		System.out.println(studentName + " 님의 남은 돈은 " + money + "원 입니다.");
+	
+	}
+}

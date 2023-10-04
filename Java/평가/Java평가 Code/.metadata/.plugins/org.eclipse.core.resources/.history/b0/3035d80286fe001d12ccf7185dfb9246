@@ -1,0 +1,11 @@
+package com.day09trans;
+
+public class Subway extends TakeTransMain{
+
+	private String sline;
+
+	public Subway(String sline) {
+		this.sline=sline;
+	}
+
+}
